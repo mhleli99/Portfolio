@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mediaquries.css">
+    </head>
+    <body>
+        <nav id="desktop-nav">
+            <div class="logo">Bulelani Ndlovu</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">Bulelani Ndlovu</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+
+        <!--Section Profile-->
+        <section id="profile">
+            <div class="section__pic-container">
+                <img src="./assests/profile.jpg" alt="Bulelani Profile Picture" class="profile_image">
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Bulelani Ndlovu</h1>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./')">Download CV</button>
+                    <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+                </div>
+                <div id="socials-container">
+                    <img src="./assests/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/mhleli-bulelani-1b2401255/?jobid=1234'" class="icon_image">
+                    <img src="./assests/github_profile.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://github.com/mhleli99'" class="icon_image">
+                </div>
+            </div>
+        </section>
+
+        <!--About Section-->
+        <section id="about">
+            <p class="section__text__p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+                <div class="section__pic_container">
+                    <img src="./assests/about-pic.jpg" alt="Profile Picture" class="about-pic">
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img src="./assests/experience.png" alt="experience icon" class="icon">
+                            <h3>Experience</h3>
+                            <p>2+ years <br>Frontend Development</p>
+                        </div>
+                        <div class="details-container">
+                            <img src="./assests/education.png" alt="education icon" class="icon">
+                            <h3>Education</h3>
+                            <p>Diploma In Computer Science <br>Tshwane University Of Technology</p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>I'm a frontend developer passionate about building sleek, responsive, and user-friendly web applications. I specialize in Java, JavaScript, HTML, MySQL, and modern CSS, focusing on clean code and intuitive design. Let’s turn ideas into digital experiences!</p>
+                    </div>
+                </div>
+            </div>
+            <img src="./assests/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./experience'">
+        </section>
+
+        <!--Section Experience-->
+        <section id="experience">
+            <p class="section__text__p1">Explore My</p>
+            <h1 class="title">Experience</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+
+                    <!--FRONTEND DELELOPMENT-->
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Frontend Development</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./assests/checkmark2.png" alt="checkmark icon" class="icon">
+                                <div>
+                                    <h3>HTML</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assests/checkmark2.png" alt="checkmark icon" class="icon">
+                                <div>
+                                    <h3>CSS</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assests/checkmark2.png" alt="checkmark icon" class="icon">
+                                <div>
+                                    <h3>JavaScript</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assests/checkmark2.png" alt="checkmark icon" class="icon">
+                                <div>
+                                    <h3>PHP</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <!--BACKEND DELELOPMENT-->
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Backend Development</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./assests/checkmark2.png" alt="checkmark icon" class="icon">
+                                <div>
+                                    <h3>React JS</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assests/checkmark2.png" alt="checkmark icon" class="icon">
+                                <div>
+                                    <h3>Java</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assests/checkmark2.png" alt="checkmark icon" class="icon">
+                                <div>
+                                    <h3>Github</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assests/checkmark2.png" alt="checkmark icon" class="icon">
+                                <div>
+                                    <h3>MySQL</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <img src="./assests/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./experience'">
+        </section>
+
+        <!--Section Project-->
+        <section id="projects">
+            <p class="section__text__p1">Browse My Recent</p>
+            <h1 class="title">Projects</h1>
+
+            <div class="experience-details-container">
+
+                <div class="about-containers">
+
+                    <div class="experience-details-container">
+                        <div class="details-container color-container">
+                            <div class="article-container">
+                                <img src="./assests/Brick.png" alt="Project 1" class="project-img">
+                            </div>
+                            <h2 class="experience-sub-title project-title">Project One</h2>
+                            <div class="btn-container">
+                                <button class="btn btn-color-2 project-btn" onclick="location.href='./'">View</button>
+                                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mhleli99'">Download</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div class="experience-details-container">
+                        <div class="details-container color-container">
+                            <div class="article-container">
+                                <img src="./assests/projects-3.avif" alt="Project 1" class="project4-img">
+                            </div>
+                            <h2 class="experience-sub-title project-title">Project Two</h2>
+                            <div class="btn-container">
+                                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mhleli99'">View</button>
+                                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mhleli99'">Download</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-details-container">
+                        <div class="details-container color-container">
+                            <div class="article-container">
+                                <img src="./assests/projects-4.avif" alt="Project 1" class="project4-img">
+                            </div>
+                            <h2 class="experience-sub-title project-title">Project Three</h2>
+                            <div class="btn-container">
+                                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mhleli99'">View</button>
+                                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mhleli99'">Download</button>
+                            </div>
+                        </div>
+                    </div> 
+
+                </div>
+            
+            </div>
+
+            <img src="./assests/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./experience'">
+
+        </section>
+
+        <!--Section Contact-->
+        <section id="contact">
+            <p class="section__text__p1">Get In Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img src="./assests/email.png" alt="Email" class="icon contact-icon">
+                    <p><a href="mailto:mhlelibulelani942@gmail.com">Mhlelibulelani942@gmail.com</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img src="./assests/linkedin.png" alt="LinkedIn Icon" class="icon contact-icon">
+                    <p><a href="https://www.linkedin.com/in/mhleli-bulelani-1b2401255/?jobid=1234">LinkedIn</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Project</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; 2025 Bulelani Ndlovu. All rights reserved.</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
